@@ -71,6 +71,10 @@ body {
     background-color: var(--panel-color);
 }
 
+input, label {
+    display: block;
+}
+
 #right-top-container, #right-bottom-container {
     flex: 1;
 }
@@ -83,4 +87,8 @@ body {
 #right-center-container {
     height: 400px;
     background-color: white;
+}
+
+.inline-block {
+    display: inline-block;
 }
