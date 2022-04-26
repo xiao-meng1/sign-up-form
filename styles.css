@@ -4,13 +4,13 @@
 }
 
 :root {
-
+    --panel-color: hsla(210, 20%, 98%, 1);
 }
 
 body {
     display: flex;
     justify-content: right;
-    background-color: coral;
+    background-color: black;
 }
 
 #left-container {
@@ -19,10 +19,21 @@ body {
 
 #left-container > img {
     display: block;
-    height: min(955px, 100vh);
+    width: min(600px, 40vw);
 }
 
 #right-container {
+    display: flex;
     flex: 1;
-    border: solid black 10px;
+    flex-direction: column;
+    background-color: var(--panel-color);
+}
+
+#right-top-container, #right-bottom-container {
+    flex: 1;
+}
+
+#right-center-container {
+    height: 400px;
+    background-color: white;
 }
