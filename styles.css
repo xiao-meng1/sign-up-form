@@ -1,13 +1,28 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    
+    margin: 0px;
 }
 
 :root {
 
 }
 
-html {
+body {
+    display: flex;
+    justify-content: right;
+    background-color: coral;
+}
 
+#left-container {
+    overflow: hidden;
+}
+
+#left-container > img {
+    display: block;
+    height: min(955px, 100vh);
+}
+
+#right-container {
+    flex: 1;
+    border: solid black 10px;
 }
