@@ -71,24 +71,37 @@ body {
     background-color: var(--panel-color);
 }
 
+/* #right-top-container, #right-bottom-container {
+    flex: 1;
+} */
+
+#right-top-container {
+    padding: 150px 100px 50px 100px;
+    height: 327px;
+    font-weight: bold;
+}
+
+#right-center-container{
+    background-color: white;
+}
+#right-center-container > p {
+    margin-top: 30px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+form {
+    margin-left: 90px;
+    margin-bottom: 30px;
+    width: 500px;
+    font-size: 10px;
+}
+
 input, label {
     display: block;
 }
 
-#right-top-container, #right-bottom-container {
-    flex: 1;
-}
-
-#right-top-container {
-    margin: 150px 100px 50px 100px;
-    font-weight: bold;
-}
-
-#right-center-container {
-    height: 400px;
-    background-color: white;
-}
-
-.inline-block {
+.input-block {
     display: inline-block;
+    margin: 10px;
 }
