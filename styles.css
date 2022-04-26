@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -59,6 +60,7 @@ body {
     position: absolute;
     bottom: 0;
     margin: 10px;
+    font-size: 12px;
     color: white;
 }
 
@@ -71,6 +73,11 @@ body {
 
 #right-top-container, #right-bottom-container {
     flex: 1;
+}
+
+#right-top-container {
+    margin: 150px 100px 50px 100px;
+    font-weight: bold;
 }
 
 #right-center-container {
