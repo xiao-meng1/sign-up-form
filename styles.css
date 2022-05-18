@@ -94,8 +94,9 @@ form {
     font-size: 10px;
 }
 
-input, label {
+input, label, select {
     display: block;
+    width: 200px;
 }
 
 .input-block {
@@ -118,13 +119,23 @@ input, label {
     font-size: 15px;
 }
 
-input:focus {
+input:focus,
+select:focus {
     border-color: blue;
     outline: none;
     box-shadow: rgb(190, 190, 190) 2px 2px 6px;
 }
 
-input:not(:placeholder-shown):not(:focus):invalid {
+input.invalid-input,
+select.invalid-input {
     border-color: red;
+    outline: none;
+}
+
+select {
+    background-color: white;
+}
+
+select:focus-visible {
     outline: none;
 }
